@@ -3,4 +3,6 @@
     @import "base/reset.css";
   @import "base/Typography.css";
 @import "Components/NavItem.css";
-@import "vendors/bootstrap.css";
+@import "Components/icon.css";
+@import "layouts/navigation.css";
+@import "layouts/Logo.css";

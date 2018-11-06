@@ -4,17 +4,18 @@
 h1.name
 {
 font-family: 'Pattaya', sans-serif;
-font-size: 60px;
-padding: 10px;
+font-size: 50px;
+padding: 5px;
+color: #C9CCC9;
 }
 p, a
 {
 font-family: 'Noto Sans JP', sans-serif;
-padding: 10px;
+padding: 5px;
 }
 h1
 {
   font-family: 'Noto Sans JP', sans-serif;
-  padding: 10px;
+  padding: 5px;
   font-size: 40px;
 }
