@@ -1,15 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Pattaya');
 
-h1
+h1.name
 {
 font-family: 'Pattaya', sans-serif;
 font-size: 50px;
-padding: 10px;
+padding: 5px;
+color: #C9CCC9;
 }
-
-h2, p, a
+p, a
 {
 font-family: 'Noto Sans JP', sans-serif;
-padding: 10px;
+padding: 5px;
+}
+h1
+{
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 5px;
+  font-size: 40px;
 }
