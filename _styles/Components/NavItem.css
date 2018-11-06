@@ -1,0 +1,17 @@
+
+li a {
+display: block;
+color: white;
+background-color: #06872B;
+text-decoration: none;
+padding: 20px;
+border-radius: 15px;
+}
+li
+{
+  float: left;
+}
+li a:active
+{
+  background-color: #06561D;
+}
