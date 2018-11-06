@@ -1,17 +1,17 @@
 
-li a {
+li.nav-item a {
 display: block;
-color: white;
-background-color: #06872B;
+color: #C9CCC9;
+background-color: #377F2F;
 text-decoration: none;
 padding: 20px;
-border-radius: 15px;
+
 }
-li
+li.nav-item
 {
   float: left;
 }
-li a:active
+li.nav-item a:hover
 {
-  background-color: #06561D;
+  color: #F7F9F7;
 }
