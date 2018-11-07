@@ -1,5 +1,6 @@
 
-  @import "vendors/bootstrap/css/bootstrap.css";
+  @import "vendors/bootstrap/bootstrap.css";
+  @import "vendors.bootstrap/js/bootstrap.js";
     @import "base/reset.css";
   @import "base/Typography.css";
 @import "Components/NavItem.css";
