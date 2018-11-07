@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Pattaya');
 
-h1.name
+h1.bolder
 {
 font-family: 'Pattaya', sans-serif;
 font-size: 50px;
@@ -12,10 +12,16 @@ p, a
 {
 font-family: 'Noto Sans JP', sans-serif;
 padding: 5px;
+color: #C9CCC9;
 }
 h1
 {
   font-family: 'Noto Sans JP', sans-serif;
   padding: 5px;
   font-size: 40px;
+  color: #C9CCC9;
+}
+h1.welcome
+{
+  font-size: 80px;
 }
