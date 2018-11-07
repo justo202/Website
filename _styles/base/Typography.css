@@ -23,5 +23,25 @@ h1
 }
 h1.welcome
 {
+  color: #C9CCC9;
   font-size: 80px;
+  padding-top: 100px;
+
+}
+p.welcome
+{
+  padding-top: 50px;
+  color: #C9CCC9;
+  font-size: 40px;
+}
+body
+{
+  background-color: #153315;
+}
+.container.text
+{
+  background-color: #477247;
+  border-left: 5px solid #0B1C0B;
+  border-right: 5px solid #0B1C0B;
+
 }
