@@ -3,17 +3,12 @@ a.logo
   display:inline-block;
   height: auto;
   text-decoration: none;
-
-
 }
 a.logo i
 {
-  float: inherit;
 display:inline-block
-
 }
 a.logo h1
 {
-  float: inherit;
 display:inline-block
 }
