@@ -1,16 +1,15 @@
 @media only screen and (max-width: 500px) {
- a.logo i, a.logo h1 {
-font-size: 40px;
- }
+  a.logo i, a.logo h1 {
+    font-size: 40px;
+  }
 }
 
-a.logo
-{
-  display:inline-block;
+a.logo {
+  display: inline-block;
   height: auto;
   text-decoration: none;
 }
-a.logo i, a.logo h1
-{
-display:inline-block
+
+a.logo i, a.logo h1 {
+  display: inline-block
 }
