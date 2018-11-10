@@ -12,16 +12,24 @@ p, a {
   padding: 5px;
   color: #C9CCC9;
 }
-
 h1 {
   font-family: 'Noto Sans JP', sans-serif;
   padding: 5px;
   font-size: 40px;
   color: #C9CCC9;
-
 }
 
 
 body {
   background-color: #153315;
+
+}
+.cvtext h1
+{
+
+  font-size: 20px;
+}
+main
+{
+  min-height: 78vh;
 }
