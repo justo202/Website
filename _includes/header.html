@@ -7,19 +7,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">item 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">item 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">item 3</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">item 4</a>
-      </li>
+    <ul class = "navbar ml-auto">
+     {% assign sorted_pages = site.pages | sort:"order" %}
+     {% for node in sorted_pages %}
+     <li class = "nav-item"><a class = "nav-link" href="{{node.url}}">{{node.title}}</a></li>
+     {% endfor %}
     </ul>
   </div>
 </nav>
