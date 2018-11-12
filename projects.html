@@ -7,17 +7,17 @@ order: 2
 <main>
   {% assign check = 0 %}
 
-<div class="container">
+<div class="container text">
 
 
 
   {% for project in site.pages %}
-  {%if check == 0%}
-  <div class="card-deck">
-  {%endif%}
- {% if project.path contains 'myProjects/' %}
 
- <div class="card mw-50%">
+ {% if project.path contains 'myProjects/' %}
+ {%if check == 0%}
+ <div class="card-deck mb-4">
+ {%endif%}
+ <div class="card">
  {% if project.photo %}
  <img class="card-img-top" src="{{ project.photo }}" alt="Card image
 cap">
@@ -28,7 +28,6 @@ cap">
  <a href="{{ project.path }}" class = "intro">  <h1>Learn more</h1></a>
  </div>
  </div>
-
  {%assign check = check | plus: 1%}
  {% endif %}
  {%if check == 3%}
@@ -36,11 +35,20 @@ cap">
 {%assign check = 0%}
  {%endif%}
 {% endfor %}
-{%if check != 0%}
+{%if check == 1%}
+  <div class="card">
+
+  </div>
+  <div class="card">
+
+  </div>
 </div>
 {%endif%}
+{%if check == 2%}
+</div>
+{%endif%}
+
 </div>
 
-<h1>{{check}}</h1>
 
 </main>
