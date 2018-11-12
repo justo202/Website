@@ -8,10 +8,19 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class = "navbar ml-auto">
-     {% assign sorted_pages = site.pages | sort:"order" %}
-     {% for node in sorted_pages %}
-     <li class = "nav-item"><a class = "nav-link" href="{{node.url}}">{{node.title}}</a></li>
-     {% endfor %}
+
+{% for project in site.pages %}
+  {% if project.order != nil %}
+  <li class = "nav-item"><a class = "nav-link" href="{{project.url}}">{{project.title}}</a></li>
+{% endif %}
+
+{% endfor %}
+
+
+
+
+
+
     </ul>
   </div>
 </nav>
