@@ -1,8 +1,8 @@
-button.intro h1 {
+a.intro h1 {
   font-size: 20px;
 }
 
-button.intro {
+a.intro {
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -15,31 +15,31 @@ button.intro {
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 5px;
+  text-decoration: none;
 }
 
-button.intro:hover {
+a.intro:hover {
   background-color: #419637;
   transition-duration: 0.4s;
 }
 
-button.intro:hover h1 {
+a.intro:hover h1 {
   color: black;
-  transition-duration: 0.4s;
   padding-right: 15px;
   transition: 0.1s;
 }
 
-button.intro h1::after {
+a.intro h1::after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
   padding-left: 5px;
   color: #C9CCC9;
   padding-bottom: 10px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
-button.intro:hover h1::after {
+a.intro:hover h1::after {
   color: black;
   opacity: 1;
 }
