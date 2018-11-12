@@ -5,50 +5,48 @@ fulltitle: "Project list"
 order: 2
 ---
 <main>
-  {% assign check = 0 %}
+  {%assign sorted_pages = site.pages | where: "project", "yes"  | sort: "importance"%}
+  {%assign remainder = sorted_pages.size | modulo: 3%}
+  {%assign check = 0%}
 
-<div class="container text">
+<div class="container mt-4">
 
 
-
-  {% for project in site.pages %}
-
- {% if project.path contains 'myProjects/' %}
- {%if check == 0%}
- <div class="card-deck mb-4">
- {%endif%}
- <div class="card">
- {% if project.photo %}
- <img class="card-img-top" src="{{ project.photo }}" alt="Card image
-cap">
- {% endif %}
- <div class="card-body">
- <h6 class="card-title">{{ project.fulltitle }}</h6>
- <p class="card-text">{{ project.description }}</p>
- <a href="{{ project.path }}" class = "intro">  <h1>Learn more</h1></a>
- </div>
- </div>
- {%assign check = check | plus: 1%}
- {% endif %}
- {%if check == 3%}
- </div>
-{%assign check = 0%}
- {%endif%}
-{% endfor %}
-{%if check == 1%}
-  <div class="card">
-
+  {%for node in sorted_pages%}
+  {%if check == 0%}
+   <div class="card-deck mb-4">
+  {%endif%}
+  <div class="card" style="max-height:600px">
+  {% if node.photo %}
+  <img class="card-img-top" src="{{ node.photo }}" alt="Card image
+  cap">
+  {% endif %}
+  <div class="card-body">
+  <h6 class="card-title">{{ node.fulltitle }}</h6>
+  <p class="card-text">{{ node.description }}</p>
+  <a href="{{ node.path }}" class = "intro">  <h1>Learn more</h1></a>
   </div>
-  <div class="card">
-
   </div>
-</div>
-{%endif%}
-{%if check == 2%}
-</div>
-{%endif%}
+  {%assign check = check | plus: 1%}
+  {%if remainder == 1%}
+    {%assign remainder = 0%}
+    {%assign check = 0%}
+  </div>
+  {%elsif reimainder == 2 and check == 2%}
+  {%assign remainder = 0%}
+  {%assign check = 0%}
+  </div>
+  {%elsif check == 3%}
+  {%assign check = 0%}
+  </div>
+  {%endif%}
+  {%endfor%}
+
 
 </div>
+
+
+
 
 
 </main>
