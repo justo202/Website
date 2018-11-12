@@ -9,17 +9,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class = "navbar ml-auto">
 
-{% for project in site.pages %}
-  {% if project.order != nil %}
-  <li class = "nav-item"><a class = "nav-link" href="{{project.url}}">{{project.title}}</a></li>
+{% assign sorted_pages = site.pages | sort:"order" %}
+{% for node in sorted_pages %}
+  {% if node.order != nil %}
+  <li class = "nav-item"><a class = "nav-link" href="{{node.url}}">{{node.title}}</a></li>
 {% endif %}
 
 {% endfor %}
-
-
-
-
-
 
     </ul>
   </div>

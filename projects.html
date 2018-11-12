@@ -8,24 +8,23 @@ order: 2
 
 <div class="container">
 
-
+<div class="card-deck">
   {% for project in site.pages %}
- {% if project.path contains 'research/' and project.display-on-home=="yes" %}
- <div class=“card">
+ {% if project.path contains 'myProjects/' %}
+ <div class="card" style = "width: 50%">
  {% if project.photo %}
- <img class="card-img-top" src="/images/projects/{{ project.photo }}" alt="Card image
+ <img class="card-img-top" src="{{ project.photo }}" alt="Card image
 cap">
  {% endif %}
-
  <div class="card-body">
- <h6 class="card-title">{{ project.research-title }}</h6>
+ <h6 class="card-title">{{ project.fulltitle }}</h6>
  <p class="card-text">{{ project.description }}</p>
- <a href="{{ project.path }}" class="card-link float-right">Find Out More</a>
+ <button href="{{ project.path }}" class = "intro" type="button" name="button">  <h1>Learn more</h1></button>
  </div>
  </div>
  {% endif %}
 {% endfor %}
-
+</div>
 </div>
 
 </main>
