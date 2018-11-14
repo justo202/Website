@@ -10,7 +10,7 @@
 }
 @media only screen and (max-width: 320px) {
   a.logo i, a.logo h1 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }
 }

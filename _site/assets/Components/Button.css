@@ -47,6 +47,6 @@ a.intro:hover h1::after {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     a.intro{
-        width: 100%;
+        width: 100% !important;
     }
 }

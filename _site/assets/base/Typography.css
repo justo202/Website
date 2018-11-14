@@ -33,3 +33,29 @@ main
 {
   min-height: 80vh;
 }
+.itemsflex h1
+{
+  font-size: 60px;
+}
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    h1
+    {
+      font-size: 40px !important;
+    }
+    }
+    @media only screen and (max-width: 375px) {
+        /* For mobile phones: */
+        h1
+        {
+          font-size: 30px !important;
+        }
+        }
+
+        @media only screen and (max-width: 320px) {
+            /* For mobile phones: */
+            h1
+            {
+              font-size: 20px !important;
+            }
+            }
