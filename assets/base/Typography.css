@@ -21,7 +21,7 @@ h1 {
 
 
 body {
-  background-color: #153315;
+  background-color: #1B421B;
 
 }
 .cvtext h1
@@ -29,9 +29,21 @@ body {
 
   font-size: 20px;
 }
+h6
+{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 6px !important;
+  font-size: 30px;
+  color: #C9CCC9;
+}
 main
 {
   min-height: 80vh;
+
+}
+html
+{
+  scroll-behavior: smooth;
 }
 .itemsflex h1
 {
