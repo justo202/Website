@@ -1,7 +1,7 @@
 .container.text {
   background-color: #477247;
   border: 5px solid #0B1C0B;
-  padding: 80px;
+  padding: 40px;
   margin-top: 100px;
   margin-bottom: 100px;
   opacity: 0.9;
@@ -9,4 +9,12 @@
 .container.text h1, .container.text p
 {
   opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+  .container.text
+  {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
