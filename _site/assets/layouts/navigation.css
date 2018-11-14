@@ -1,0 +1,16 @@
+nav {
+  background-color: #377F2F;
+  clear: both;
+}
+
+nav .options {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
