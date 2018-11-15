@@ -5,6 +5,8 @@
   margin-top: 100px;
   margin-bottom: 100px;
   opacity: 0.9;
+   word-wrap: break-word;
+
 }
 .container.text h1, .container.text p
 {

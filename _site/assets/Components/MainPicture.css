@@ -5,7 +5,7 @@
   background-image: url(https://picsum.photos/3000/1500?image=1022);
   background-size: cover;
   overflow: hidden;
-  position: relative;
+  position: inherit;
 
 
 }

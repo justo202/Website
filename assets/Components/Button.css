@@ -16,6 +16,8 @@ a.intro {
   cursor: pointer;
   margin-top: 5px;
   text-decoration: none;
+  
+
 }
 
 a.intro:hover {
@@ -48,5 +50,9 @@ a.intro:hover h1::after {
     /* For mobile phones: */
     a.intro{
         width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
     }
+
 }
