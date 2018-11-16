@@ -1,0 +1,37 @@
+body {
+  background-color: #1B421B;
+
+
+}
+main
+{
+  min-height: 62.5vh;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+main
+{
+  min-height: 72vh;
+}
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+main
+{
+  min-height: 72.8vh;
+}
+@media only screen and (max-width: 375px) {
+    /* For mobile phones: */
+main
+{
+  min-height: 73.7vh;
+}
+@media only screen and (max-width: 320px) {
+    /* For mobile phones: */
+main
+{
+  min-height: 74vh;
+}

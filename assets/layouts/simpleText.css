@@ -1,11 +1,12 @@
 .container.text {
-  background-color: #477247;
-  border: 5px solid #0B1C0B;
+  background-color: #1F4C1F ;
+
   padding: 40px;
   margin-top: 100px;
   margin-bottom: 100px;
   opacity: 0.9;
    word-wrap: break-word;
+   min-height: 100%;
 
 }
 .header-text
