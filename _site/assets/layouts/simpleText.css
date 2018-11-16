@@ -17,13 +17,11 @@
   bottom: 0px;
   padding: 1em 2em;
   max-height: auto;
-  text-align: justify;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+
 
 
 }
+
 .container.text h1, .container.text p
 {
   opacity: 1;
