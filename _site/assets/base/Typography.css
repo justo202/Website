@@ -21,11 +21,6 @@ h1 {
   color: #C9CCC9;
 }
 
-
-body {
-  background-color: #1B421B;
-
-}
 .cvtext h1
 {
 
@@ -37,15 +32,6 @@ h2
   margin-bottom: 6px !important;
   font-size: 30px;
   color: #C9CCC9;
-}
-main
-{
-  min-height: 80vh;
-
-}
-html
-{
-  scroll-behavior: smooth;
 }
 .itemsflex h1
 {

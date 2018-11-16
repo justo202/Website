@@ -10,10 +10,12 @@
 .side-link h2
 {
   font-size: 20px;
+
 }
 .side-link h2:hover
 {
   color: #F7F9F7;
+
 }
 h1.side-header
 {
@@ -27,8 +29,8 @@ h1.side-header
 }
 .collum-item
 {
-flex: 1 1 50%;
-margin-bottom: 10px;
+flex: 1 1 45%;
+margin: 2.5%;
 
 }
 @media only screen and (max-width: 1023px) {
@@ -39,7 +41,10 @@ margin-bottom: 10px;
 
   flex-wrap: wrap;
 }
-
+.side-link
+{
+  margin-top: 20px;
+}
     }
     @media only screen and (max-width: 550px) {
         /* For mobile phones: */
