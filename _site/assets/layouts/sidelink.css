@@ -1,0 +1,53 @@
+.side-link
+{
+
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  display: block;
+}
+.side-link h2
+{
+  font-size: 20px;
+}
+.side-link h2:hover
+{
+  color: #F7F9F7;
+}
+h1.side-header
+{
+  font-size: 30px;
+}
+.side-collum
+{
+  display: flex;
+  flex-direction: column;
+
+}
+.collum-item
+{
+flex: 1 1 50%;
+margin-bottom: 10px;
+
+}
+@media only screen and (max-width: 1023px) {
+    /* For mobile phones: */
+.side-collum
+{
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+
+    }
+    @media only screen and (max-width: 550px) {
+        /* For mobile phones: */
+
+        .side-collum
+        {
+          flex-direction: column;
+
+          flex-wrap: nowrap;
+        }
+        }

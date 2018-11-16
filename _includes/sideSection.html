@@ -1,0 +1,30 @@
+
+  {%assign sorted_pages = site.pages | where: "importance", 1 %}
+
+  {%if sorted_pages.size > 0%}
+<div class = "container p-1 mb-2" style = "background-color:#1F4C1F ">
+  <div class="side-link">
+    <h1 class = side-header>More cool stuff</h1>
+    <div class="side-collum">
+
+
+
+      {%for node in sorted_pages%}
+      <div class="collum-item">
+        <a href="/{{node.path}}">
+           {% if node.photo %}
+            <img class="side-img" src="{{ node.photo }}" alt="Project Image">
+            {% endif %}
+            {%if node.fulltitle%}
+            <h2>{{node.fulltitle}}</h2>
+            {%endif%}
+        </a>
+      </div>
+      {%endfor%}
+    </div>
+
+  </div>
+
+
+</div>
+  {%endif%}

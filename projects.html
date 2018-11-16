@@ -18,11 +18,11 @@ order: 2
   {%endif%}
   <div class="card m-2" style="max-height:600px">
   {% if node.photo %}
-  <img class="card-img-top" src="{{ node.photo }}" alt="Card image
+  <img class="card-img-top normal-img" src="{{ node.photo }}" alt="Card image
   cap">
   {% endif %}
   <div class="card-body">
-  <h6 class="card-title">{{ node.fulltitle }}</h6>
+  <h2 class="card-title">{{ node.fulltitle }}</h2>
   <p class="card-text">{{ node.description }}</p>
   <a href="{{ node.path }}" class = "intro">  <h1>Learn more</h1></a>
   </div>
