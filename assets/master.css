@@ -1,3 +1,4 @@
+/*Imports all the css files to the html file*/
 @import "base/reset.css";
 @import "base/Typography.css";
 @import "Components/NavItem.css";

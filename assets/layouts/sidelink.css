@@ -1,58 +1,58 @@
-.side-link
-{
-
-  width:90%;
+/* items in the sidebar*/
+.side-link {
+  width: 90%;
+  /*makes everything centered */
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
   display: block;
 }
-.side-link h2
-{
+
+/*Sets font size for the titles of projects */
+.side-link h2 {
   font-size: 20px;
-
 }
-.side-link h2:hover
-{
+
+/*Makes the titles light up when hovered */
+.side-link h2:hover {
   color: #F7F9F7;
-
 }
-h1.side-header
-{
+
+/*Sets the font size for the header of side section */
+h1.side-header {
   font-size: 30px;
 }
-.side-collum
-{
+
+/*Container that displays all the featured projects */
+.side-collum {
   display: flex;
   flex-direction: column;
-
 }
-.collum-item
-{
-flex: 1 1 45%;
-margin: 2.5%;
 
+/*Sets the collum items normal size to 45% of the width and margin to 2.5 so it would separate */
+.collum-item {
+  flex: 1 1 45%;
+  margin: 2.5%;
 }
+
 @media only screen and (max-width: 1023px) {
-    /* For mobile phones: */
-.side-collum
-{
-  flex-direction: row;
 
-  flex-wrap: wrap;
+  /* When viewing on a mobile screen displays the projects in a row instead of a collum */
+  .side-collum {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .side-link {
+    margin-top: 20px;
+  }
 }
-.side-link
-{
-  margin-top: 20px;
+
+@media only screen and (max-width: 550px) {
+
+  /*When viewing on small phones displays projects in a collum again */
+  .side-collum {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
-    }
-    @media only screen and (max-width: 550px) {
-        /* For mobile phones: */
-
-        .side-collum
-        {
-          flex-direction: column;
-
-          flex-wrap: nowrap;
-        }
-        }

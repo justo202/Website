@@ -1,3 +1,4 @@
+/*Sets the style of normal lists used in normal text */
 ul.normal-list {
   display: block;
   list-style-type: disc;

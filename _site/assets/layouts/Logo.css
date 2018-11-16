@@ -1,3 +1,4 @@
+/*Changes the size of the logo depending on the screen */
 @media only screen and (max-width: 425px) {
   a.logo i, a.logo h1 {
     font-size: 40px;
@@ -13,7 +14,7 @@
     font-size: 25px !important;
   }
 }
-
+/*Displays the logo with the icon and title */
 a.logo {
   display: inline-block;
   height: auto;

@@ -1,50 +1,49 @@
-
+/*Container at the home page that has a nice image backround */
 .container-fluid.responsive-scale {
   width: 100%;
+  /*Sets the height to be 92 viewport units so that it would fill the entire screen */
   height: 92vh;
   background-image: url(https://picsum.photos/3000/1500?image=1022);
   background-size: cover;
   overflow: hidden;
   position: inherit;
-
 }
 
-.itemsflex
-{
+/*Item displayed on the main picture */
+.itemsflex {
+  /*Gives the backround opacity */
   background-color: rgba(21, 51, 21, 0.2);
-
-      margin: 0;
-      position: absolute;
-      left: 0;
-      bottom: 20%;
-      padding: 1em 2em;
-      max-height: 500px;
-      max-width: 50%;
-      display: flex;
-      flex-direction: column;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  padding: 1em 2em;
+  max-height: 500px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.intro.buttonflex
-{
- width: 30%;
- align-self: flex-end;
-
+/*aign the button in the flex container */
+.intro.buttonflex {
+  width: 30%;
+  align-self: flex-end;
 }
+
 @media only screen and (max-width: 1439px) {
-    /* For mobile phones: */
-    .itemsflex
-    {
+
+  /*makes the item bigger for mobile phones*/
+  .itemsflex {
     max-width: 60%;
-    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .itemsflex
-    {
+
+  /* makes the item even bigger for phones */
+  .itemsflex {
     max-width: 100%;
     margin: auto;
     bottom: 15%;
-    }
-
+  }
 }

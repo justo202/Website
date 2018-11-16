@@ -1,16 +1,15 @@
+/*Container for normal text with a nicer backround */
 .container.text {
-  background-color: #1F4C1F ;
-
+  background-color: #1F4C1F;
   padding: 40px;
   margin-top: 100px;
   margin-bottom: 100px;
-  opacity: 0.9;
-   word-wrap: break-word;
-   min-height: 100%;
-
+  word-wrap: break-word;
+  min-height: 100%;
 }
-.header-text
-{
+
+/*Backround for headers in project pages */
+.header-text {
   width: 100%;
   background-color: rgba(21, 51, 21, 0.8);
   margin: 0;
@@ -18,18 +17,11 @@
   bottom: 0px;
   padding: 1em 2em;
   max-height: auto;
-
-
-
 }
 
-.container.text h1, .container.text p
-{
-  opacity: 1;
-}
 @media only screen and (max-width: 768px) {
-  .container.text
-  {
+  .container.text {
+    /*Decreases the padding on mobile devices */
     padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;

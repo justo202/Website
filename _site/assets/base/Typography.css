@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Pattaya');
 
+/*The font used for the name next to the logo */
 h1.bolder {
   font-family: 'Pattaya', sans-serif;
   font-size: 50px;
   padding: 5px;
   color: #C9CCC9;
 }
-
+/*Sets the default style of p and a elements */
 p, a {
   font-family: 'Noto Sans JP', sans-serif;
   padding: 5px;
   color: #C9CCC9;
   font-size: 15px;
 }
-
+/*sets the default style of h1 elements */
 h1 {
   font-family: 'Noto Sans JP', sans-serif;
   padding: 5px;
   font-size: 40px;
   color: #C9CCC9;
 }
-
+/*Sets the size of h1 in the CV text */
 .cvtext h1
 {
-
   font-size: 20px;
 }
+/*Sets the default style of h2 elements used for writing about projects */
 h2
 {
   font-family: 'Noto Sans JP', sans-serif;
@@ -33,6 +34,7 @@ h2
   font-size: 30px;
   color: #C9CCC9;
 }
+/*Sets the size of h1 element used on the picture */
 .itemsflex h1
 {
   font-size: 60px;
