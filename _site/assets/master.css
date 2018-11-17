@@ -1,3 +1,4 @@
+/*Imports all the css files to the html file*/
 @import "base/reset.css";
 @import "base/Typography.css";
 @import "Components/NavItem.css";
@@ -12,5 +13,6 @@
 @import "Components/cards.css";
 @import "Components/cards.css";
 @import "Components/image.css";
-@import "layouts/sidelink.css";
+@import "layouts/sideSection.css";
 @import "base/SemanticInfo.css";
+@import "layouts/projectHeader.css";

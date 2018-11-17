@@ -1,0 +1,10 @@
+/*Backround for headers in project pages */
+.header-text {
+  width: 100%;
+  background-color: rgba(21, 51, 21, 0.8);
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  padding: 1em 2em;
+  max-height: auto;
+}

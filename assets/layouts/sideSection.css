@@ -1,5 +1,5 @@
 /* items in the sidebar*/
-.side-link {
+.side-section {
   width: 90%;
   /*makes everything centered */
   margin-left: auto;
@@ -9,18 +9,18 @@
 }
 
 /*Sets font size for the titles of projects */
-.side-link h2 {
-  font-size: 20px;
+.side-section h2 {
+  font-size: 15px;
 }
 
 /*Makes the titles light up when hovered */
-.side-link h2:hover {
+.side-section h2:hover {
   color: #F7F9F7;
 }
 
 /*Sets the font size for the header of side section */
 h1.side-header {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /*Container that displays all the featured projects */
@@ -54,5 +54,12 @@ h1.side-header {
   .side-collum {
     flex-direction: column;
     flex-wrap: nowrap;
+  }
+}
+@media only screen and (width: 1024px) {
+
+  /*When viewing on small phones displays projects in a collum again */
+  h1.side-header {
+    font-size: 20px;
   }
 }
