@@ -1,7 +1,8 @@
+/*Sets the size of the elements used on the button */
 a.intro h1 {
   font-size: 20px;
 }
-
+/*Sets the default style of the button */
 a.intro {
   border-radius: 4px;
   border: none;
@@ -16,21 +17,21 @@ a.intro {
   cursor: pointer;
   margin-top: 5px;
   text-decoration: none;
-  
+
 
 }
-
+/*Changes the colour of the backround when hovering the button */
 a.intro:hover {
   background-color: #419637;
   transition-duration: 0.4s;
 }
-
+/*Changes the colour of text in the button */
 a.intro:hover h1 {
   color: black;
   padding-right: 15px;
   transition: 0.1s;
 }
-
+/*Sets an invisible ">>" after the the normal words of the button  */
 a.intro h1::after {
   content: '\00bb';
   position: absolute;
@@ -40,12 +41,12 @@ a.intro h1::after {
   padding-bottom: 10px;
   transition: 0.1s;
 }
-
+/* When the button is being hovered the ">>" symbol appears*/
 a.intro:hover h1::after {
   color: black;
   opacity: 1;
 }
-
+/*When using a mobile phone makes the button bigger */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     a.intro{

@@ -4,46 +4,64 @@ title: "Projects"
 fulltitle: "Project list"
 order: 2
 ---
+<!--Finds all the project pages, sorts them and displays them 3 in a row. If the size of the array does not divide by 3 then displays 2 at the top or 1 at the top -->
 <main>
-  {%assign sorted_pages = site.pages | where: "project", "yes"  | sort: "importance"%}
+  <!--Gets all the pages that are projects and sorts the by the variable "importance". -->
+  {%assign sorted_pages = site.pages | where: "project", "yes" | sort: "importance"%}
+  <!--Divides the size of the array so we would know how many pages do not fit in the row of 3  -->
   {%assign remainder = sorted_pages.size | modulo: 3%}
+  <!--Variable check will help us determine how many cards are being displayed in a row -->
   {%assign check = 0%}
 
-<div class="container mt-4">
+  <div class="container mt-4">
 
 
-  {%for node in sorted_pages%}
-  {%if check == 0%}
-   <div class="card-deck mb-4 ">
-  {%endif%}
-  <div class="card m-2" style="max-height:600px">
-  {% if node.photo %}
-  <img class="card-img-top normal-img" src="{{ node.photo }}" alt="Card image
+    {%for node in sorted_pages%}
+    <!--Creates a card deck if check = 0 -->
+    {%if check == 0%}
+    <div class="card-deck mb-4 ">
+      {%endif%}
+      <div class="card m-2" style="max-height:600px">
+        {% if node.photo %}
+        <img class="card-img-top normal-img" src="{{ node.photo }}" alt="Card image
   cap">
-  {% endif %}
-  <div class="card-body">
-  <h2 class="card-title">{{ node.fulltitle }}</h2>
-  <p class="card-text">{{ node.description }}</p>
-  <a href="{{ node.path }}" class = "intro">  <h1>Learn more</h1></a>
-  </div>
-  </div>
-  {%assign check = check | plus: 1%}
-  {%if remainder == 1%}
+        {% endif %}
+        <div class="card-body">
+          <h2 class="card-title">{{ node.fulltitle }}</h2>
+          <p class="card-text">{{ node.description }}</p>
+          <a href="{{ node.path }}" class="intro">
+            <h1>Learn more</h1>
+          </a>
+        </div>
+      </div>
+      <!--After adding a card to the row inrceases check by 1 -->
+      {%assign check = check | plus: 1%}
+      <!--If remainder = 1 then that means there is 1 card that does not fit in a row of 3 -->
+      {%if remainder == 1%}
+      <!--Assigns the remainder to 0 because it's not needed anymore -->
+      {%assign remainder = 0%}
+      <!--Assign check to 0 because a new row of cards is going to start -->
+      {%assign check = 0%}
+      <!--Closes the card-deck class at the start -->
+    </div>
+    <!--If remainder is 2 then that means there are 2 cards that do not fit in a row of 2 so we display them 1st -->
+    {%elsif remainder == 2 and check == 2%}
     {%assign remainder = 0%}
+    <!--Assign check to 0 because a new row of cards is going to start -->
     {%assign check = 0%}
+    <!--Closes the card-deck class at the start -->
   </div>
-  {%elsif remainder == 2 and check == 2%}
-  {%assign remainder = 0%}
-  {%assign check = 0%}
-  </div>
+  <!--If check is equal to 3 that means 3 cards have been place to the row so we need to start a new row -->
   {%elsif check == 3%}
+  <!--Assign check to 0 because a new row of cards is going to start -->
   {%assign check = 0%}
+  <!--If check is equal to 3 that means 3 cards have been place to the row so we need to start a new row -->
   </div>
   {%endif%}
   {%endfor%}
 
 
-</div>
+  </div>
 
 
 
