@@ -1,5 +1,4 @@
 /*Changes the backround colour of card classes used in bootstrap */
-.card
-{
+.card {
   background-color: #153315;
 }

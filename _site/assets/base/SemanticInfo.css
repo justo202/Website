@@ -1,41 +1,41 @@
 body {
   background-color: #1B421B;
 }
-main
-{
+
+main {
   /*Sets the minium height of the content so the footer would always stay at the bottom */
   min-height: 62.5vh;
 }
-html
-{
+
+html {
   scroll-behavior: smooth;
 }
-footer
-{
+
+footer {
   background-color: #377F2F;
 }
+
 nav {
   background-color: #377F2F;
-
 }
+
 /*Increases the minium height of the screen so that the footer would always be at the bottom */
 @media only screen and (max-width: 768px) {
-main
-{
-  min-height: 72vh;
-}
-@media only screen and (max-width: 425px) {
-main
-{
-  min-height: 72.8vh;
-}
-@media only screen and (max-width: 375px) {
-main
-{
-  min-height: 73.7vh;
-}
-@media only screen and (max-width: 320px) {
-main
-{
-  min-height: 74vh;
-}
+  main {
+    min-height: 72vh;
+  }
+
+  @media only screen and (max-width: 425px) {
+    main {
+      min-height: 72.8vh;
+    }
+
+    @media only screen and (max-width: 375px) {
+      main {
+        min-height: 73.7vh;
+      }
+
+      @media only screen and (max-width: 320px) {
+        main {
+          min-height: 74vh;
+        }

@@ -8,17 +8,6 @@
   min-height: 100%;
 }
 
-/*Backround for headers in project pages */
-.header-text {
-  width: 100%;
-  background-color: rgba(21, 51, 21, 0.8);
-  margin: 0;
-  position: absolute;
-  bottom: 0px;
-  padding: 1em 2em;
-  max-height: auto;
-}
-
 @media only screen and (max-width: 768px) {
   .container.text {
     /*Decreases the padding on mobile devices */

@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 
-/*aign the button in the flex container */
+/*align the button in the flex container */
 .intro.buttonflex {
   width: 30%;
   align-self: flex-end;
@@ -32,7 +32,7 @@
 
 @media only screen and (max-width: 1439px) {
 
-  /*makes the item bigger for mobile phones*/
+  /*makes the item bigger for lower resolution*/
   .itemsflex {
     max-width: 60%;
   }
@@ -40,7 +40,7 @@
 
 @media only screen and (max-width: 768px) {
 
-  /* makes the item even bigger for phones */
+  /* makes the item even bigger for mobile phones */
   .itemsflex {
     max-width: 100%;
     margin: auto;

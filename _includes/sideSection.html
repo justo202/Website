@@ -3,11 +3,13 @@
   <!--Checks if there are any pages in the array -->
   {%if sorted_pages.size > 0%}
   <aside class = "container" style = "background-color:#1F4C1F ">
-    <div class="side-link">
+    <div class="side-section">
       <h1 class = side-header>More cool stuff</h1>
       <div class="side-collum">
         <!--For every page that has importance = 1 display a clickable picture and title of the project -->
         {%for node in sorted_pages%}
+<!-- Does not diplay the page if the user is currently in it-->
+        {%if node.fulltitle != page.fulltitle%}
         <div class="collum-item">
           <a href="/{{node.path}}">
              {% if node.photo %}
@@ -18,6 +20,7 @@
               {%endif%}
           </a>
         </div>
+        {%endif%}
         {%endfor%}
       </div>
     </div>

@@ -1,19 +1,17 @@
 /*class used in the projects.html sets the max height of the images so the would be too big */
-.normal-img
-{
+.normal-img {
   width: 100%;
   max-height: 400px;
 }
+
 /*class used for project images at the begining of the page*/
-.top-img
-{
+.top-img {
   width: 100vw;
   height: 500px;
-
 }
+
 /*class used for images on the sidebar */
-.side-img
-{
+.side-img {
   width: 100%;
   max-height: 200px;
 }

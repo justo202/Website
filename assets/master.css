@@ -13,5 +13,6 @@
 @import "Components/cards.css";
 @import "Components/cards.css";
 @import "Components/image.css";
-@import "layouts/sidelink.css";
+@import "layouts/sideSection.css";
 @import "base/SemanticInfo.css";
+@import "layouts/projectHeader.css";

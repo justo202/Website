@@ -7,6 +7,7 @@ h1.bolder {
   padding: 5px;
   color: #C9CCC9;
 }
+
 /*Sets the default style of p and a elements */
 p, a {
   font-family: 'Noto Sans JP', sans-serif;
@@ -14,6 +15,7 @@ p, a {
   color: #C9CCC9;
   font-size: 15px;
 }
+
 /*sets the default style of h1 elements */
 h1 {
   font-family: 'Noto Sans JP', sans-serif;
@@ -21,44 +23,45 @@ h1 {
   font-size: 40px;
   color: #C9CCC9;
 }
+
 /*Sets the size of h1 in the CV text */
-.cvtext h1
-{
+.cvtext h1 {
   font-size: 20px;
 }
+
 /*Sets the default style of h2 elements used for writing about projects */
-h2
-{
+h2 {
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 6px !important;
   font-size: 30px;
   color: #C9CCC9;
 }
+
 /*Sets the size of h1 element used on the picture */
-.itemsflex h1
-{
+.itemsflex h1 {
   font-size: 60px;
 }
-@media only screen and (max-width: 425px) {
-    /* For mobile phones: */
-    h1
-    {
-      font-size: 30px !important;
-    }
-    h2
-    {
-      font-size: 20px;
-    }
-    }
 
-        @media only screen and (max-width: 320px) {
-            /* For mobile phones: */
-            h1
-            {
-              font-size: 20px !important;
-            }
-            h2
-            {
-              font-size: 20px;
-            }
-            }
+@media only screen and (max-width: 425px) {
+
+  /* Decreases size for smaller devices*/
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  /* For mobile phones: */
+  h1 {
+    font-size: 20px !important;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
