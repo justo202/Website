@@ -7,7 +7,6 @@
   word-wrap: break-word;
   min-height: 100%;
 }
-
 @media only screen and (max-width: 768px) {
   .container.text {
     /*Decreases the padding on mobile devices */

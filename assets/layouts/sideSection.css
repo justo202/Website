@@ -7,49 +7,39 @@
   text-decoration: none;
   display: block;
 }
-
 /*Sets font size for the titles of projects */
 .side-section h2 {
   font-size: 15px;
 }
-
 /*Makes the titles light up when hovered */
 .side-section h2:hover {
   color: #F7F9F7;
 }
-
 /*Sets the font size for the header of side section */
 h1.side-header {
   font-size: 25px;
 }
-
 /*Container that displays all the featured projects */
 .side-collum {
   display: flex;
   flex-direction: column;
 }
-
 /*Sets the collum items normal size to 45% of the width and margin to 2.5 so it would separate */
 .collum-item {
   flex: 1 1 45%;
   margin: 2.5%;
 }
-
 @media only screen and (max-width: 1023px) {
-
   /* When viewing on a mobile screen displays the projects in a row instead of a collum */
   .side-collum {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .side-link {
     margin-top: 20px;
   }
 }
-
 @media only screen and (max-width: 550px) {
-
   /*When viewing on small phones displays projects in a collum again */
   .side-collum {
     flex-direction: column;
