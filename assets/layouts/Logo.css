@@ -4,26 +4,22 @@
     font-size: 40px;
   }
 }
-
 @media only screen and (max-width: 375px) {
   a.logo i, a.logo h1 {
     font-size: 30px;
   }
 }
-
 @media only screen and (max-width: 320px) {
   a.logo i, a.logo h1 {
     font-size: 25px !important;
   }
 }
-
 /*Displays the logo with the icon and title */
 a.logo {
   display: inline-block;
   height: auto;
   text-decoration: none;
 }
-
 a.logo i, a.logo h1 {
   display: inline-block
 }

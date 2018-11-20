@@ -6,11 +6,9 @@ li.nav-item a {
   text-decoration: none;
   padding: 10px;
 }
-
 li.nav-item {
   float: left;
 }
-
 li.nav-item a:hover {
   color: #F7F9F7;
 }

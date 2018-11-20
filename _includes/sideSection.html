@@ -1,28 +1,28 @@
-  <!--Gets an array of all pages that have importance = 1 (which means they are the most important) -->
-  {%assign sorted_pages = site.pages | where: "importance", 1 %}
-  <!--Checks if there are any pages in the array -->
-  {%if sorted_pages.size > 0%}
-  <aside class = "container" style = "background-color:#1F4C1F ">
-    <div class="side-section">
-      <h1 class = side-header>More cool stuff</h1>
-      <div class="side-collum">
-        <!--For every page that has importance = 1 display a clickable picture and title of the project -->
-        {%for node in sorted_pages%}
-<!-- Does not diplay the page if the user is currently in it-->
-        {%if node.fulltitle != page.fulltitle%}
-        <div class="collum-item">
-          <a href="/Website/{{node.path}}">
-             {% if node.photo %}
-              <img class="side-img" src="{{ node.photo }}" alt="Project Image">
-              {% endif %}
-              {%if node.fulltitle%}
-              <h2>{{node.fulltitle}}</h2>
-              {%endif%}
-          </a>
-        </div>
-        {%endif%}
-        {%endfor%}
+<!--Gets an array of all pages that have importance = 1 (which means they are the most important) -->
+{%assign sorted_pages = site.pages | where: "importance", 1 %}
+<!--Checks if there are any pages in the array -->
+{%if sorted_pages.size > 0%}
+<aside class="container" style="background-color:#1F4C1F ">
+  <div class="side-section">
+    <h1 class=side-header>More cool stuff</h1>
+    <div class="side-collum">
+      <!--For every page that has importance = 1 display a clickable picture and title of the project -->
+      {%for node in sorted_pages%}
+      <!-- Does not diplay the page if the user is currently in it-->
+      {%if node.fulltitle != page.fulltitle%}
+      <div class="collum-item">
+        <a href="/Website/{{node.path}}">
+          {% if node.photo %}
+          <img class="side-img" src="{{ node.photo }}" alt="Project Image">
+          {% endif %}
+          {%if node.fulltitle%}
+          <h2>{{node.fulltitle}}</h2>
+          {%endif%}
+        </a>
       </div>
+      {%endif%}
+      {%endfor%}
     </div>
-  </aside>
+  </div>
+</aside>
 {%endif%}

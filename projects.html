@@ -12,10 +12,7 @@ order: 2
   {%assign remainder = sorted_pages.size | modulo: 3%}
   <!--Variable check will help us determine how many cards are being displayed in a row -->
   {%assign check = 0%}
-
   <div class="container mt-4">
-
-
     {%for node in sorted_pages%}
     <!--Creates a card deck if check = 0 -->
     {%if check == 0%}
@@ -59,12 +56,5 @@ order: 2
   </div>
   {%endif%}
   {%endfor%}
-
-
   </div>
-
-
-
-
-
 </main>
