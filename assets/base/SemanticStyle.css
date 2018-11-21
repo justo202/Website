@@ -18,7 +18,10 @@ footer {
 nav {
   background-color: #377F2F;
 }
-
+aside
+{
+  background-color:#1F4C1F;
+}
 /*Increases the minium height of the screen so that the footer would always be at the bottom */
 @media only screen and (max-width: 768px) {
   main {
@@ -41,5 +44,11 @@ nav {
 @media only screen and (max-width: 320px) {
   main {
     min-height: 74vh;
+  }
+}
+/*Aside will appear under the main content when the screen is viewed on a mobile device, so the top margin is increased to separate it from the main content */
+@media only screen and (max-width: 1023px) {
+  aside {
+    margin-top: 20px;
   }
 }
