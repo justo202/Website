@@ -2,7 +2,7 @@
 /*Sets the style of the leaf icon near on the logo */
 i {
   font-size: 40px;
-  background-color: none;
+  background-color: inherit;
   color: #C9CCC9;
   padding: 5px;
 }
