@@ -1,0 +1,5 @@
+/*Sets the collum items normal size to 45% of the width and margin to 2.5 so it would separate */
+.collum-item {
+  flex: 1 1 45%;
+  margin: 2.5%;
+}

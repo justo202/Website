@@ -11,7 +11,6 @@
   <header>
     {% include header.html %}
   </header>
-  <main>
     <!--The project image at the top -->
     <div class="container-fluid p-0" style="position:relative; text-align: center">
       <img class="img-fluid top-img" src="{{page.photo}}" alt="Top image">
@@ -25,7 +24,9 @@
       <div class="row">
         <div class="col-lg-9">
           <section class="container text" style="margin-top:0px;">
-            {{content}}
+            <main>
+                    {{content}}      
+            </main>
           </section>
         </div>
         <div class="col-lg-3">
@@ -33,7 +34,6 @@
         </div>
       </div>
     </div>
-  </main>
   <footer>
     {% include footer.html %}
   </footer>
